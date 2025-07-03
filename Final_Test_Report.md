@@ -280,7 +280,7 @@ d) My Lessons Learned
      ✦ localStorage debugging for score persistence
 
 e) Challenges & Growth
-+ Time Management: Advocated for daily 9AM standups to track progress  
++ Time Management: Advocated for daily 9AM standups to track progress .We had some challenges as some members are fulltime employed but we always made a way for effective teamwork.
 + Technical Skill: Mastered Jest mocking to test scrambleWord() in isolation  
 - Communication: Initially failed to document test dependencies   
 ```
