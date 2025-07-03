@@ -242,6 +242,47 @@ pie
 | **Error Handling**   | Validate function inputs                     | Force `checkGuess(123)` or `checkGuess(null)` |
 | **State Management** | Track score/hint state changes              | Verify score ≥ 0 after hints              |
 
+### 5.4 My Manual Testing Contributions (Lusanda)
+a) Core Testing Activities
+ I validated all UI flows: Form submissions, button states, and error messages
+
+Chrome-focused testing: Verified rendering, console errors, and localStorage behavior
+
+Edge case documentation: Reported mobile viewport overflow (Issue #8) and hint timing issues"*
+
+b) Key Findings
++ Critical: Caught score calculation delay (2-sec UI update lag)  
++ High: Identified case sensitivity in word matching ("React" ≠ "react")  
+- Missed: Early oversight of localStorage clearing on browser close
+
+c) Collaboration Impact
+
+"My manual tests informed 3 automation priorities:
+
+Added Jest test for score display timing (inspired by my Issue #5)
+
+Fixed case sensitivity in checkGuess() after my defect report
+
+Expanded test data based on my edge case scenarios"
+
+d) My Lessons Learned
+1. **Manual Testing Value**:  
+   - Discovered 4/7 defects through exploratory testing  
+   - Automated tests missed UI state issues (e.g., button disable logic)  
+
+2. **Improvements Needed**:  
+   - Should have documented test cases earlier in GitHub Projects  
+   - Next time: Record Loom videos to demonstrate visual bugs  
+
+3. **Tool Growth**:  
+   - Learned Chrome DevTools for:  
+     ✦ Performance profiling during word scrambling  
+     ✦ localStorage debugging for score persistence
+
+e) Challenges & Growth
++ Time Management: Advocated for daily 9AM standups to track progress  
++ Technical Skill: Mastered Jest mocking to test scrambleWord() in isolation  
+- Communication: Initially failed to document test dependencies   
 ```
 
 ---
